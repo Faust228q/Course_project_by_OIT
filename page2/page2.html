@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>Python</header>
+    <main>
+        <div id="oglavlenie">
+            <ol id="og">
+                <li><a href="#introduction">Введение</a></li>
+                <li><a href="#functions">Функции</a></li>
+                <li><a href="#oop">ООП</a></li>
+
+            </ol>
+        </div>
+        <div id="one" class="blocks">
+
+            <p id="introduction">Python - интерпретируемый динамический язык программирования, созданный в 1991 Гвидо
+                ван Россумом. Написан на языке Си (исходный код можно найти на Github).<br><br>
+                В Python реализовано функциональное и объектно-ориентированное программирование, что делает его
+                мультипарадигменным языком.<br>
+                В Python есть следуещие основные операции:
+            <div id="list">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Оператор</td>
+                            <td>Пример</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>+</td>
+                            <td>1+8=9</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>34-4=30</td>
+                        </tr>
+                        <tr>
+                            <td>*</td>
+                            <td>2*3=6</td>
+                        </tr>
+                        <tr>
+                            <td>/</td>
+                            <td>3/4=0.75</td>
+                        </tr>
+                        <tr>
+                            <td>//</td>
+                            <td>4//3=1</td>
+                        </tr>
+                        <tr>
+                            <td>%</td>
+                            <td>6%4=2</td>
+                        </tr>
+                        <tr>
+                            <td>**</td>
+                            <td>2**3 = 8<br>-1**3=-8</td>
+                        </tr>
+
+
+                    </tbody>
+
+
+                </table>
+            </div>
+            <aside id="intr">
+                <div id='var'>Переменные<br>var1: int<br>var2 = 5<br>var3: int = 5</div>
+                <div id="calc">from math import *<br>while str(a:=input("<< ")) !=" Q":<br>     print(eval(a))<br># пример калькулятора<br> на Python</div>
+
+            </aside>
+
+
+            </table>
+            </p>
+        </div>
+        <div id="two" class="blocks">
+            <p id="functions">
+                Функции - один из объектов в Python. Так-как они объекты, то они могут быть переданы в качестве
+                аргумента в другую функцию и выведены из нее в качестве результата.<br><br>
+                Существуют 2 вида функций: обыкновенная и анонимная:
+            </p>
+            <ul id="funcs">
+                <li>def a(x): ... - обыкновенная, где ... - тип данных Ellipsis</li>
+                <li>a = lambda x: ... - анонимная, где ... - тип данных Ellipsis</li>
+            </ul>
+            <div id="ex-f">Пример функций:<br>
+
+                def integral(func, a, b, prec=0.001):<br>
+                    s=0<br>
+                    while a&lt;b: <br>
+                        s+=func(a)<br>
+                        a+=prec<br>
+                    return s*prec<br>
+                print(integral(lambda x: x, 1, 10))
+            </div>
+        </div>
+        <div id="three" class="blocks">
+            <p id="oop">Раз Python - объектно-ориентированный язык, значит все в нем - объект, а для создания объектов
+                нужны классы.<br>
+                Класс - шаблон объекта с отпределенными аттрибутами, где аттрибуты - поля и методы<br>
+            <dl id="mdaa">
+                <dt>поле</dt>
+                <dd>переменная класса</dd>
+                <dt>метод</dt>
+                <dd>функция класса</dd>
+            </dl>
+            </p>
+            <div id="frac">
+                пример класса:<br><br>
+                class Fraction:<br>
+                    def __init__(self, number: float):<br>
+                        self._num=number<br>
+                        self._int_num=number<br>
+                        self._num2=1<br>
+                        while int(self._int_num)!=self._int_num:<br>
+                            self._int_num*=10<br>
+                            self._num2*=10<br>
+                        from math import gcd<br>
+                        a = gcd(self._int_num, self._num2)<br>
+                        if a:<br>
+                            self._int_num = int(self._int_num//a)<br>
+                            self._num2 = int(self._num2//a)<br><br>
+                    def __str__(self):<br>
+                        return f"{self._int_num}/{self._num2}"<br><br>
+
+                    @property <br>
+                    def eval(self):<br>
+                        return self._num<br><br>
+
+                    @property<br>
+                    def numerator(self):<br>
+                        return self._int_num<br><br>
+
+                    @property<br>
+                    def denominator(self):<br>
+                        return self._num2<br>
+                <div id="input"><button id="infrac">Ввести дробь</button></div>
+
+            </div>
+
+        </div>
+
+    </main>
+    <script src="index.js"> </script>
+</body>
+
+</html>

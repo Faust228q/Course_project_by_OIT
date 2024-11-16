@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+            background: rgb(190, 190, 190);
+
+        }
+
+
+        header {
+
+            background: rgb(230, 50, 50);
+            font: 2em roboto;
+            height: 10%;
+            color: white;
+            text-align: center;
+            animation: start 5s;
+        }
+
+        main {
+            background: rgb(190, 190, 190);
+            height: 180%;
+            overflow: hidden;
+        }
+
+        #og {
+            height: 5%;
+            width: 50%;
+            position: absolute;
+            left: 5%;
+            top: 10%;
+
+        }
+
+        #og>li {
+            font: 2em roboto;
+            text-wrap: wrap;
+        }
+
+        #intro {
+            font: 1.5em roboto;
+            text-wrap: wrap;
+
+            position: absolute;
+            top: 50%;
+            left: 10%;
+        }
+
+        .line {
+            height: 1px;
+            border: 1px dashed rgb(100, 100, 100);
+            position: absolute;
+
+        }
+
+        #onel {
+            top: 40%;
+        }
+
+
+
+
+
+
+
+        #line2 {
+            width: 90%;
+            height: 10%;
+            background: linear-gradient(90deg, rgb(228, 57, 57), rgb(44, 216, 58));
+            position: absolute;
+            left: 5%;
+            border-radius: 100px;
+            top: 20%;
+        }
+
+
+        #generations {
+            display: flex;
+            position: absolute;
+            left: 10%;
+            top: -4%;
+            z-index: 100;
+            overflow: hidden;
+
+        }
+
+        .line3 {
+            height: 13%;
+            width: 1px;
+            border: 4px solid black;
+            margin: 10%;
+        }
+
+        #gens {
+            opacity: 0;
+            position: absolute;
+            top: 100%;
+            overflow: hidden;
+
+        }
+
+        #gens2 {
+            animation: hiding 1s;
+            position: absolute;
+            top: 100%;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        @keyframes hiding {
+            from {
+                opacity: 0;
+                top: 140%
+            }
+
+            to {
+                opacity: 100;
+                top: 100%;
+            }
+        }
+
+
+
+        .langs {
+            font: 1em roboto;
+            position: absolute;
+        }
+
+
+        #lone {
+            left: 10%;
+        }
+
+        #ltwo {
+            left: 28%;
+        }
+
+        #lthree {
+            left: 45%;
+        }
+
+        #lfour {
+            left: 64%;
+        }
+
+        #lfive {
+            left: 85%;
+        }
+
+        @keyframes start {
+            from {
+                position: absolute;
+                color: rgb(230, 50, 50);
+                font: 50em roboto;
+                height: 100%;
+                text-align: center;
+                z-index: 1000;
+                display: inline-block;
+                text-align: center;
+
+            }
+
+            30% {
+                position: absolute;
+                color: white;
+                font: 50em roboto;
+                height: 100%;
+                text-align: center;
+                display: inline-block;
+                text-align: center;
+                z-index: 1000;
+
+            }
+
+            60% {
+                position: absolute;
+                color: white;
+                font: 50em roboto;
+                height: 100%;
+                text-align: center;
+                display: inline-block;
+                text-align: center;
+                z-index: 1000;
+
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>&lt;/&gt;</header>
+    <main>
+
+        <ol id="og">
+            <li><a id="to1">Введение</a></li>
+            <li><a id="to">Карта языков</a></li>
+        </ol>
+        <div class="line" id="onel"> </div>
+        <div id="intro">На этой странице представлена небольшая карта языков программирования с 1950 по 2023</div>
+
+
+        <div class="line" id="twol" style="top: 65%;"> </div>
+
+        <div id="gens">
+            <div id="line2"> </div>
+            <div id="generations">
+                <div class="line3"> </div>
+                <div class="line3"> </div>
+                <div class="line3"> </div>
+                <div class="line3"> </div>
+            </div>
+            <div class="langs" id="lone">1950-70<br>Assempler, Fortran, Cobol,<br> Lisp, Algol, Basic<br></div>
+            <div class="langs" id="ltwo">1970-80<br>Pascal, C, Matlab, SQL</div>
+            <div class="langs" id="lthree">1980-90<br>Objective-C, C++</div>
+            <div class="langs" id="lfour">1990-2000<br>Python, Haskell, Java,<br> JavaScript, Delphi</div>
+            <div class="langs" id="lfive">2000-23<br>C#, Rust, Golang,<br> Kotlin, Swift, Mojo</div>
+        </div>
+    </main>
+
+
+
+
+    <script src="index.js">
+
+    </script>
+</body>
+
+</html>

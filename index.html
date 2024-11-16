@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>Курсовая работа</header>
+    <main>
+
+        <div id="main">
+            <div id="one" class="text-info">Тема: Программирование и математика<br>Подготовил: Феденко А. А.</div>
+            <div id="two" class="text-info">страницы:<br> Калькулятор<br> Python<br> Карта языков программирования</div>
+            <div id="three" class="text-info"></div>
+
+        </div>
+        <aside id="aside">
+            <div class="page">
+                <div class="aside-text"><a href="calc/calc.html">CALC</a></div>
+            </div>
+            <div class="page">
+                <div class="aside-text" onclick="WindowPage2()">PY</div>
+            </div>
+            <div class="page">
+                <div class="aside-text" onclick="WindowPage3()">MAP</div>
+            </div>
+        </aside>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script>
+
+
+        function WindowPage2() {
+            window.open("page2/page2.html")
+        }
+        function WindowPage3() {
+            window.open("page3/page3.html")
+        }
+    </script>
+</body>
+
+</html>

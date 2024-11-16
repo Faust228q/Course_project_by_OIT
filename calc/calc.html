@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+
+        <div id="inout">
+            <div id="in"></div>
+            <div id="out"></div>
+        </div>
+        <div id="buttons">
+            <div id="modules">
+                <div onclick="abcChange()" class="modbut">ABC</div>
+                <div onclick="funChange()" class="modbut">f(x)</div>
+                <div onclick="sinChange()" class="modbut">sin</div>
+                <div onclick="dyChange()" class="modbut">d(y)</div>
+
+            </div>
+            <div id="mainbuttons">
+                
+                <div onclick="record('.')" class="button">.</div>
+                <div onclick="record(',')" class="button">,</div>
+                <div onclick="record('qq1')" class="button">'</div>
+                <div onclick="record('7')" id="num" class="button">7</div>
+                <div onclick="record('8')" id="num" class="button">8</div>
+                <div onclick="record('9')" id="num" class="button">9</div>
+                <div onclick="record('+')" id="op" class="button">+</div>
+                <div onclick="record('=>')" id="op"class="button">=></div>
+
+                <div onclick="record('(x)=>')" class="button">(x)</div>
+                <div onclick="record('x')" class="button">x</div>
+                <div onclick="record('qq2')" class="button">"</div>
+                <div onclick="record('4')" id="num" class="button">4</div>
+                <div onclick="record('5')" id="num" class="button">5</div>
+                <div onclick="record('6')" id="num" class="button">6</div>
+                <div onclick="record('-')" id="op" class="button">-</div>
+                <div onclick="record('%')" id="op" class="button">%</div>
+                
+                <div onclick="record('<')" class="button">&lt;</div>
+                <div onclick="record('>')" class="button">&gt;</div>
+                <div onclick="record('!=')" class="button">&ne;</div>
+                <div onclick="record('1')" id="num" class="button">1</div>
+                <div onclick="record('2')" id="num" class="button">2</div>
+                <div onclick="record('3')" id="num" class="button">3</div>
+                <div onclick="record('*')" id="op" class="button">*</div>
+                <div onclick="record('**')" id="op" class="button">**</div>
+                
+                <div onclick="record('<=')" class="button">&le;</div>
+                <div onclick="record('>=')" class="button">&ge;</div>
+                <div onclick="record('=')" class="button">&equals;</div>
+                <div onclick="record('(')" id="num" class="button">(</div>
+                <div onclick="record('0')" id="num" class="button">0</div>
+                <div onclick="record(')')" id="num" class="button">)</div>
+                <div onclick="record('/')" id="op" class="button">/</div>
+                <div onclick="record('/\/')" id="op" class="button">//</div>
+
+
+            </div>
+            <div id="other_opers">
+                <div onclick="back()" class="otherbut">⌫</div>
+                <div onclick="copy()" class="otherbut">C+</div>
+                <div onclick="copy2()" class="otherbut">Co+</div>
+                <div onclick="paste()" class="otherbut">Cp</div>
+                <div onclick="clearing()" class="otherbut">C</div>
+            </div>
+        </div>
+
+
+
+
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>

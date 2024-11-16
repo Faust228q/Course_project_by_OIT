@@ -1,0 +1,129 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    
+}
+body{
+    overflow: hidden;
+}
+
+
+header{
+    height: 10%;
+    background: rgb(200,0,0);
+}
+
+
+
+#inout{
+    height: 50%;
+    border: 1px solid black;
+}
+
+#in{
+    height: 30%;
+    border-bottom: 1px dashed rgb(100,100,100);
+    background-color: black;
+    color: white;
+    font: 20pt arial;
+
+}
+#out{
+    background-color: black;
+    color: white;
+    height: 70%;
+    font: 35pt arial;
+}
+
+#buttons{
+    display: flex;
+    height: 50%
+
+}
+
+#mainbuttons{
+    position: relative;
+    width: 60%;
+
+    display: grid;
+
+    grid-template-columns: repeat(8, 12.5%);
+    grid-template-rows: repeat(4, 20%);
+   
+}
+#other_opers{
+    width: 10%;
+    background-color: rgb(200,0,0);
+}
+
+.button{
+    width: 100%;
+    height: 100%;
+    background: black;
+    border: 2px solid white;
+    color: white;
+    text-align: center;
+    font: xx-large "arial bold";
+
+    
+    
+}
+
+#op{
+    border-color: rgb(200,0,0);
+}
+
+#num{
+    background: rgb(20,20,20);
+}
+.button:hover{
+    background: rgb(10,10,10);
+}
+#op:hover{
+    background: rgb(10,10,10);
+}
+#num:hover{
+    background: rgb(30,30,30);
+}
+
+.otherbut{
+    background: black;
+    color: white;
+    width: 80%;
+    height: 10%;
+    margin-top: 10%;
+    font: 17pt 'arial bold';
+    text-align: center;
+    border-radius: 30px;
+    position: relative;
+    left: 10%;
+
+    transition: transform 0.2s ease-in-out;
+}
+.otherbut:hover{
+    transform: scale(1.05);
+}
+
+#modules{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(3, 25%);
+    position: relative;
+    top: 1%;
+    background: rgb(0,0,0);
+    border-right: 2px solid black;
+    width: 30%;
+}
+
+.modbut{
+    background: rgb(200,0,0);
+    width: 90%;
+    height: 90%;
+    border-radius: 20%;;
+    text-align: center;
+    font: 40pt "arial bold";
+    margin-left: 3%;
+    margin-top: 3%;
+}

@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 110%;
+    height: 100%;
+    overflow-x: hidden;
+    background: black;
+    overflow: hidden;
+
+}
+
+
+header {
+    background: black;
+    height: 10%;
+    color: white;
+    text-align: center;
+    font: 4em "arial bold";
+    animation: header-start 1s;
+    animation-timing-function: ease-out;
+
+    position: relative;
+}
+
+
+#aside {
+    height: 100%;
+    width: 10%;
+    position: relative;
+    left: -5%;
+    background: linear-gradient(60deg, rgb(0, 150, 0), rgb(0, 200, 0));
+    overflow: hidden;
+
+    transition: left 0.4s;
+    animation: aside-start 1s;
+    animation-timing-function: ease-out;
+
+}
+
+#aside:hover {
+    left: 0%;
+
+}
+
+
+.page {
+    height: 33.3%;
+    border: 2px solid black;
+
+}
+
+.aside-text {
+    background-color: rgba(155, 227, 0, 50);
+    width: 90%;
+    height: 90%;
+    position: relative;
+    top: 5%;
+    border-radius: 0 20% 20% 0;
+    font: 150% arial;
+    text-align: center;
+    text-wrap: wrap;
+    white-space: pre;
+}
+
+
+
+main {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#main {
+    position: relative;
+    left: -5%;
+}
+
+.text-info {
+    background-color: rgb(52, 59, 36);
+    color: white;
+    font: 3em arial;
+    text-wrap: wrap;
+    height: 33.3%;
+    width: 105.5%;
+    position: relative;
+}
+
+#one {
+    animation: info-start1 1s;
+    animation-timing-function: ease-out;
+    border-bottom: 1px dashed rgb(200, 200, 200);
+    ;
+
+}
+
+#two {
+    animation: info-start2 1s;
+    animation-timing-function: ease-out;
+
+    border-bottom: 1px dashed rgb(200, 200, 200);
+    ;
+
+}
+
+#three {
+    animation: info-start3 1s;
+    animation-timing-function: ease-out;
+
+
+}
+
+
+
+
+@keyframes header-start {
+    from {
+        top: 50%;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 100%;
+    }
+}
+
+@keyframes aside-start {
+    from {
+        top: 90%;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 100%;
+    }
+}
+
+@keyframes info-start1 {
+    from {
+        top: 100%;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 100%;
+    }
+}
+
+@keyframes info-start2 {
+    from {
+        top: 130%;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 100%;
+    }
+}
+
+@keyframes info-start3 {
+    from {
+        top: 170%;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 100%;
+    }
+}
